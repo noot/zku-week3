@@ -8,6 +8,8 @@ import {
 } from '../index';
 
 describe('ECDH test', () => {
+  jest.setTimeout(100000);
+  
   let eddsa: EdDSA;
   beforeAll(async () => {
     eddsa = await buildEddsaModule();
